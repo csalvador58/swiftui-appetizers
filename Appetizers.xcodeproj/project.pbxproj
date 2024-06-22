@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		B9721C572C2624E90054EF1F /* AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9721C562C2624E90054EF1F /* AppetizersApp.swift */; };
-		B9721C592C2624E90054EF1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9721C582C2624E90054EF1F /* ContentView.swift */; };
+		B9721C592C2624E90054EF1F /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9721C582C2624E90054EF1F /* AppetizerTabView.swift */; };
 		B9721C5B2C2624EA0054EF1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9721C5A2C2624EA0054EF1F /* Assets.xcassets */; };
 		B9721C5E2C2624EA0054EF1F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9721C5D2C2624EA0054EF1F /* Preview Assets.xcassets */; };
+		B9721C652C2626450054EF1F /* AppetizerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9721C642C2626450054EF1F /* AppetizerListView.swift */; };
+		B9721C672C26265A0054EF1F /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9721C662C26265A0054EF1F /* AccountView.swift */; };
+		B9721C692C2626630054EF1F /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9721C682C2626630054EF1F /* OrderView.swift */; };
+		B9721C6C2C2652680054EF1F /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9721C6B2C2652680054EF1F /* Appetizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B9721C532C2624E90054EF1F /* Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9721C562C2624E90054EF1F /* AppetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizersApp.swift; sourceTree = "<group>"; };
-		B9721C582C2624E90054EF1F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B9721C582C2624E90054EF1F /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
 		B9721C5A2C2624EA0054EF1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9721C5D2C2624EA0054EF1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B9721C642C2626450054EF1F /* AppetizerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListView.swift; sourceTree = "<group>"; };
+		B9721C662C26265A0054EF1F /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		B9721C682C2626630054EF1F /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		B9721C6B2C2652680054EF1F /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,7 @@
 		B9721C4A2C2624E90054EF1F = {
 			isa = PBXGroup;
 			children = (
+				B9721C6A2C26273F0054EF1F /* Products */,
 				B9721C552C2624E90054EF1F /* Appetizers */,
 				B9721C542C2624E90054EF1F /* Products */,
 			);
@@ -52,9 +61,13 @@
 			isa = PBXGroup;
 			children = (
 				B9721C562C2624E90054EF1F /* AppetizersApp.swift */,
-				B9721C582C2624E90054EF1F /* ContentView.swift */,
+				B9721C582C2624E90054EF1F /* AppetizerTabView.swift */,
+				B9721C6B2C2652680054EF1F /* Appetizer.swift */,
 				B9721C5A2C2624EA0054EF1F /* Assets.xcassets */,
 				B9721C5C2C2624EA0054EF1F /* Preview Content */,
+				B9721C642C2626450054EF1F /* AppetizerListView.swift */,
+				B9721C662C26265A0054EF1F /* AccountView.swift */,
+				B9721C682C2626630054EF1F /* OrderView.swift */,
 			);
 			path = Appetizers;
 			sourceTree = "<group>";
@@ -65,6 +78,13 @@
 				B9721C5D2C2624EA0054EF1F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B9721C6A2C26273F0054EF1F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9721C592C2624E90054EF1F /* ContentView.swift in Sources */,
+				B9721C6C2C2652680054EF1F /* Appetizer.swift in Sources */,
+				B9721C672C26265A0054EF1F /* AccountView.swift in Sources */,
+				B9721C592C2624E90054EF1F /* AppetizerTabView.swift in Sources */,
 				B9721C572C2624E90054EF1F /* AppetizersApp.swift in Sources */,
+				B9721C652C2626450054EF1F /* AppetizerListView.swift in Sources */,
+				B9721C692C2626630054EF1F /* OrderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
