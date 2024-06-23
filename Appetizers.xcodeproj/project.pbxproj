@@ -22,6 +22,7 @@
 		B9721C742C2691530054EF1F /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9721C732C2691530054EF1F /* AppetizerListViewModel.swift */; };
 		B9721C762C269D500054EF1F /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9721C752C269D500054EF1F /* Alert.swift */; };
 		B9721C782C27C9B80054EF1F /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9721C772C27C9B80054EF1F /* LoadingView.swift */; };
+		B9BECE912C28A5FB00E993D0 /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BECE902C28A5FB00E993D0 /* AppetizerDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		B9721C732C2691530054EF1F /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
 		B9721C752C269D500054EF1F /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		B9721C772C27C9B80054EF1F /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		B9BECE902C28A5FB00E993D0 /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			children = (
 				B9721C732C2691530054EF1F /* AppetizerListViewModel.swift */,
 				B9721C642C2626450054EF1F /* AppetizerListView.swift */,
+				B9BECE902C28A5FB00E993D0 /* AppetizerDetailView.swift */,
 			);
 			path = AppetizerListView;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				B9721C782C27C9B80054EF1F /* LoadingView.swift in Sources */,
 				B93E2E8B2C28036D00765935 /* RemoteImage.swift in Sources */,
 				B9721C702C2662D90054EF1F /* NetworkManager.swift in Sources */,
+				B9BECE912C28A5FB00E993D0 /* AppetizerDetailView.swift in Sources */,
 				B9721C572C2624E90054EF1F /* AppetizersApp.swift in Sources */,
 				B9721C742C2691530054EF1F /* AppetizerListViewModel.swift in Sources */,
 				B9721C762C269D500054EF1F /* Alert.swift in Sources */,
