@@ -54,6 +54,110 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B93E2E8C2C280BB900765935 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B9721C582C2624E90054EF1F /* AppetizerTabView.swift */,
+				B93E2E8E2C280BD200765935 /* AccountView */,
+				B93E2E8D2C280BC600765935 /* AppetizerListView */,
+				B93E2E8F2C280BDA00765935 /* OrderView */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		B93E2E8D2C280BC600765935 /* AppetizerListView */ = {
+			isa = PBXGroup;
+			children = (
+				B9721C732C2691530054EF1F /* AppetizerListViewModel.swift */,
+				B9721C642C2626450054EF1F /* AppetizerListView.swift */,
+			);
+			path = AppetizerListView;
+			sourceTree = "<group>";
+		};
+		B93E2E8E2C280BD200765935 /* AccountView */ = {
+			isa = PBXGroup;
+			children = (
+				B9721C662C26265A0054EF1F /* AccountView.swift */,
+			);
+			path = AccountView;
+			sourceTree = "<group>";
+		};
+		B93E2E8F2C280BDA00765935 /* OrderView */ = {
+			isa = PBXGroup;
+			children = (
+				B9721C682C2626630054EF1F /* OrderView.swift */,
+			);
+			path = OrderView;
+			sourceTree = "<group>";
+		};
+		B93E2E902C280C0A00765935 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B93E2E932C280C2900765935 /* Alerts */,
+				B93E2E922C280C1A00765935 /* Extensions */,
+				B93E2E912C280C1200765935 /* Managers */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B93E2E912C280C1200765935 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B9721C6F2C2662D90054EF1F /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		B93E2E922C280C1A00765935 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B93E2E932C280C2900765935 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				B9721C712C2664400054EF1F /* APError.swift */,
+				B9721C752C269D500054EF1F /* Alert.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		B93E2E942C280C4800765935 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B9721C6B2C2652680054EF1F /* Appetizer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B93E2E952C280C6C00765935 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B93E2E972C280C8200765935 /* Image */,
+				B93E2E962C280C7D00765935 /* Cells */,
+				B9721C772C27C9B80054EF1F /* LoadingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B93E2E962C280C7D00765935 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B9721C6D2C265E6A0054EF1F /* AppetizerListCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B93E2E972C280C8200765935 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				B93E2E8A2C28036D00765935 /* RemoteImage.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		B9721C4A2C2624E90054EF1F = {
 			isa = PBXGroup;
 			children = (
@@ -74,21 +178,13 @@
 		B9721C552C2624E90054EF1F /* Appetizers */ = {
 			isa = PBXGroup;
 			children = (
+				B93E2E942C280C4800765935 /* Model */,
+				B93E2E902C280C0A00765935 /* Utilities */,
+				B93E2E952C280C6C00765935 /* Views */,
+				B93E2E8C2C280BB900765935 /* Screens */,
 				B9721C562C2624E90054EF1F /* AppetizersApp.swift */,
-				B9721C582C2624E90054EF1F /* AppetizerTabView.swift */,
-				B9721C6B2C2652680054EF1F /* Appetizer.swift */,
 				B9721C5A2C2624EA0054EF1F /* Assets.xcassets */,
 				B9721C5C2C2624EA0054EF1F /* Preview Content */,
-				B9721C732C2691530054EF1F /* AppetizerListViewModel.swift */,
-				B9721C642C2626450054EF1F /* AppetizerListView.swift */,
-				B9721C662C26265A0054EF1F /* AccountView.swift */,
-				B9721C682C2626630054EF1F /* OrderView.swift */,
-				B9721C6D2C265E6A0054EF1F /* AppetizerListCell.swift */,
-				B9721C6F2C2662D90054EF1F /* NetworkManager.swift */,
-				B93E2E8A2C28036D00765935 /* RemoteImage.swift */,
-				B9721C712C2664400054EF1F /* APError.swift */,
-				B9721C752C269D500054EF1F /* Alert.swift */,
-				B9721C772C27C9B80054EF1F /* LoadingView.swift */,
 			);
 			path = Appetizers;
 			sourceTree = "<group>";
