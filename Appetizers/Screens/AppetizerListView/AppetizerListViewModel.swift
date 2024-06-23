@@ -16,8 +16,8 @@ import SwiftUI
     var alertItem: AlertItem?
     
     var isLoading = false
-    
-    
+    var isShowingDetail = false
+    var selectedAppetizer: Appetizer?
     
     // Function to fetch appetizers from the network
     func getAppetizers() {
