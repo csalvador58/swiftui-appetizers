@@ -6,36 +6,44 @@
 //
 
 import SwiftUI
+import Observation
 
-@Observable class AccountViewModel {
+@Observable 
+class AccountViewModel {
     
-    var firstName = ""
-    var lastName = ""
-    var email = ""
-    var birthdate = Date()
-    var extraNapkins = false
-    var frequentRefills = false
-    
+    // AppStorage not supported with Observable
+    @ObservationIgnored @AppStorage("user") private var userData: Data?
+    var user = User()
     var alertItem: AlertItem?
+    
+    func saveChanges() {
+        guard isValidForm else { return }
+        
+        do {
+            let data = try JSONEncoder().encode(user)
+            userData = data
+            alertItem = AlertContext.userSaveSuccess
+        } catch {
+            alertItem = AlertContext.invalidUesrData
+        }
+    }
+    
+    func retrieveUser() {
+        
+    }
     
     // Computed property
     var isValidForm: Bool {
-        guard !firstName.isEmpty && !lastName.isEmpty && !email.isEmpty else {
+        guard !user.firstName.isEmpty && !user.lastName.isEmpty && !user.email.isEmpty else {
             alertItem = AlertContext.invalidForm
             return false
         }
         
-        guard email.isValidEmail else {
+        guard user.email.isValidEmail else {
             alertItem = AlertContext.invalidEmail
             return false
         }
         
         return true
-    }
-    
-    func saveChanges() {
-        guard isValidForm else { return }
-        
-        print("Changes have been saved successfully")
     }
 }

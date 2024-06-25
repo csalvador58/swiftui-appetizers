@@ -17,22 +17,22 @@ struct AccountView: View {
                 Section(header: Text("Personal Info")) {
                     TextField(
                         "First Name",
-                        text: $viewModel.firstName
+                        text: $viewModel.user.firstName
                     )
                     TextField(
                         "Last Name",
-                        text: $viewModel.lastName
+                        text: $viewModel.user.lastName
                     )
                     TextField(
                         "Email",
-                        text: $viewModel.email
+                        text: $viewModel.user.email
                     )
                     .keyboardType(.emailAddress)
                     .autocapitalization(.none)
                     .autocorrectionDisabled()
                     DatePicker(
                         "Birthday",
-                        selection: $viewModel.birthdate,
+                        selection: $viewModel.user.birthdate,
                         displayedComponents: .date
                     )
                     
@@ -45,9 +45,9 @@ struct AccountView: View {
                 }
                 
                 Section(header: Text("Requests")) {
-                    Toggle("Extra Napkins", isOn: $viewModel.extraNapkins)
+                    Toggle("Extra Napkins", isOn: $viewModel.user.extraNapkins)
                         
-                    Toggle("Frequent Refills", isOn: $viewModel.frequentRefills)
+                    Toggle("Frequent Refills", isOn: $viewModel.user.frequentRefills)
                 }
                 .toggleStyle(SwitchToggleStyle(tint: .brandPrimary))
                 
